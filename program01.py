@@ -35,7 +35,7 @@ def get_passed_students(ordered_voti,vote, last_value):
     while vote > ordered_voti[index]:
         index +=1
     if index > 0:
-        ordered_voti = ordered_voti[index:]
         last_value -= index
+
     return last_value
     
